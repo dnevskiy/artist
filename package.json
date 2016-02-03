@@ -1,0 +1,26 @@
+{
+  "name": "artisthelen.com",
+  "version": "1.0.0",
+  "description": "site for artist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnevskiy/artist.git"
+  },
+  "author": "Dmitriy Nevskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnevskiy/artist/issues"
+  },
+  "homepage": "https://github.com/dnevskiy/artist#readme",
+  "devDependencies": {
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
