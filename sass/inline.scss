@@ -1,3 +1,66 @@
-/* Welcome to Compass. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+//atoms
+$color-a: #5F7928;
+$color-b: #A7A7A7;
+
+// ****** defining atom
+@mixin define-atom($name) {
+	%#{$name} {
+
+		@content;
+	}
+}
+// ****** atoms
+@mixin atoms($collection: ()) {
+	@each $el in $collection {
+		@extend %#{$el};
+	}
+	@content;
+}
+
+@mixin text-shadow($top: 1px, $left: 1px, $blur: 1px, $color: #000) {
+	text-shadow: $top $left $blur $color;
+}
+@mixin color($color: #000, $light: 0, $dark: 0) {
+	color: $color;
+	@if $light != 0 {
+		color: lighten($color, $light);
+	} @else if $dark != 0 {
+		color: darken($color, $dark);
+	}
+}
+
+@include define-atom("header-text-color") {
+	@include color($color-a);
+}  
+@include define-atom("header-title-shadow") {
+	@include text-shadow(1px, -1px, 1px, $color-b);
+}
+
+//molecules
+@mixin header-title {
+	h1 {
+		@include atoms((
+			header-text-color,
+			header-title-shadow
+		));
+	}
+}
+
+// organless
+.header {
+	@include header-title;
+}
+
+%qwe {
+	width: 10px;
+}
+
+%asd {
+	height: 20px;
+}
+
+.test {
+	@extend %qwe;
+	@extend %asd;
+
+}

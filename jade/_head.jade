@@ -6,19 +6,23 @@ head
 	meta(name="author" content="")
 	meta(name="viewport" content="width=device-width,initial-scale=1")
 
-	//-favicon
-	//- 152*152
-	link(rel="apple-touch-icon" href="")
-	//- 32*32
-	link(rel="icon" href="")
-	//- 16,32*32
-	<!--[if IE]><link rel="shortcut icon" href=""><![endif]-->
-	//- 144*144
-	meta(name="msapplication-TileColor" content="#D83434")
-	meta(name="msapplication-TileImage" content="")
-	
 	//- inline style
 	style
 		include ../css/inline.css
-	//-main style
+	//- main style
 	+styles(styles)
+	
+	//
+		tagline og:, profile:, fb:, place:, business:, itemprop, twitter:, ...
+
+	//- favicon
+	//- 152*152 .png
+	link(rel="apple-touch-icon" href="")
+	//- 32*32 .png
+	link(rel="icon" href="")
+	//- 16,32*32 .ico
+	<!--[if IE]><link rel="shortcut icon" href=""><![endif]-->
+	//- 144*144 bgcolor & .png
+	meta(name="msapplication-TileColor" content="#")
+	meta(name="msapplication-TileImage" content="")
+	meta(name="yandex-verification" content="")
