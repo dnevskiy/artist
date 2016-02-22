@@ -1,0 +1,74 @@
+/**
+ * Colors
+ * -----------------------------------------------------------------------------
+ */
+
+/* Brand colors
+ * -------------------- */
+
+$color--main:										#e99847;
+
+/* Base colors
+ * -------------------- */
+
+$color--white:									#fff;
+$color--black:									#222;
+
+/* Text colors
+ * -------------------- */
+
+$color--text:										#333;
+$color--link:										#e99847;
+
+/* Button colors
+ * -------------------- */
+
+$color--button:									#e99847;
+$color--button-hover:						darken($color--button, 5%);
+
+/* Third party brand colors
+ * -------------------- */
+
+$color--facebook:								#03539e;
+$color--twitter:								#35ccff;
+$color--linkedin:								#217bc1;
+
+/* Fourth party brand colors
+ * -------------------- */
+
+$color--a: #a0a0a0;
+$color--b: #f5f5f2;
+
+/**
+ * Font sizes and spacing/widths
+ * -----------------------------------------------------------------------------
+ */
+
+/* Font familys
+ * -------------------- */
+
+$font-family--primary:           'Roboto', sans-serif;
+$font-family--secondary:         'Oranienbaum', serif;
+
+/* Font sizes
+ * -------------------- */
+
+$font-size--small:							14px;
+$font-size--base:								16px;
+$font-size--large:							24px;
+
+/* Spacings and widths
+ * -------------------- */
+$width-site:										950px;
+$large:											1420px;
+$medium:										1200px;
+$small:											760px;
+$xsmall:										480px;
+$spacing--small:								.5em;
+$spacing--medium:								1em;
+$spacing--large:								1.5em;
+
+/* Transitions
+ * -------------------- */
+
+$transition-time--base:         .3s;
