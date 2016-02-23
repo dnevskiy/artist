@@ -16,7 +16,7 @@
 	<!-- 16,32*32 .ico -->
 	<!--[if IE]><link rel="shortcut icon" href=""><![endif]-->
 	<!-- 144*144 bgcolor & .png -->
-	<meta name="msapplication-TileColor" content="#">
+	<meta name="msapplication-TileColor" content="#fffs">
 	<meta name="msapplication-TileImage" content="">
 	<!-- yandex-verification -->
 	<meta name="yandex-verification" content="">
