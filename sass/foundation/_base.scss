@@ -16,6 +16,7 @@ html {
 body {
     @include font-size($font-size--base);
     font-family: $font-family--primary;
+    background-image: url("../img/bg_pattern.jpg");
 }
 
 ::selection {

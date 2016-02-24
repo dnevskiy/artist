@@ -1,3 +1,6 @@
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
+
 /**
  * Media Queries
  * -----------------------------------------------------------------------------
@@ -183,4 +186,75 @@
         display: table;
         clear: both;
     }
+}
+
+/**
+ * NOT A TEMPLATE MIXIN
+ * -----------------------------------------------------------------------------
+ *
+ */
+
+/**
+ * Inline List
+ * -----------------------------------------------------------------------------
+ * Makes a list inline.
+ *
+ */
+
+@mixin inline-list {
+  list-style-type: none;
+  &, & li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+}
+
+/**
+ * Link Colors
+ * -----------------------------------------------------------------------------
+ * Set all the colors for a link with one mixin call. Order of arguments is:
+ * 
+ * 1. normal
+ * 2. hover
+ * 3. ctive
+ * 4. visited
+ * 5. focus
+ *
+ * Usage:
+ *
+ *      a +link-colors(#00c, #0cc, #c0c, #ccc, #cc0)
+ *
+ */
+
+@mixin link-colors($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+  color: $normal;
+  @if $visited {
+    &:visited {
+      color: $visited;
+    }
+  }
+  @if $focus {
+    &:focus {
+      color: $focus;
+    }
+  }
+  @if $hover {
+    &:hover {
+      color: $hover;
+    }
+  }
+  @if $active {
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+@mixin filter($filter-type,$filter-amount) { 
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
 }

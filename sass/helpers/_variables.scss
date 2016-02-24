@@ -19,12 +19,13 @@ $color--black:									#222;
 
 $color--text:										#333;
 $color--link:										#e99847;
+$color--link-hover:							darken($color--link, 10%);
 
 /* Button colors
  * -------------------- */
 
 $color--button:									#e99847;
-$color--button-hover:						darken($color--button, 5%);
+$color--button-hover:						darken($color--button, 10%);
 
 /* Third party brand colors
  * -------------------- */
@@ -47,7 +48,7 @@ $color--b: #f5f5f2;
 /* Font familys
  * -------------------- */
 
-$font-family--primary:           'Roboto', sans-serif;
+$font-family--primary:           'Open Sans', sans-serif;
 $font-family--secondary:         'Oranienbaum', serif;
 
 /* Font sizes

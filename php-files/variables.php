@@ -3,6 +3,6 @@
 	//- tags company
 	$company = false;
 	//- secondary styles
-	$styles = ["https://fonts.googleapis.com/css?family=Roboto:400,400italic,700|Oranienbaum&subset=cyrillic,latin' rel='stylesheet' type='text/css"];
+	$styles = ["https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700|Oranienbaum&subset=latin,cyrillic"];
 	$menuItem = ["Item_1","Item_2","Item_3"];
 ?>

@@ -19,15 +19,15 @@
 
 body {
     @include breakpoint(large) {
-        background: gray;
+        
     }
     @include breakpoint(medium) {
-        background: yellow;
+        
     }
     @include breakpoint(small) {
-        background: green;
+        
     }
     @include breakpoint(xsmall) {
-        background: red;
+        
     }
 }

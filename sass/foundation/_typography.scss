@@ -13,17 +13,17 @@ h3,
 h4,
 h5,
 h6 {
-
+	font-family: $font-family--secondary;
 }
 
 h1,
 .alpha {
-
+	text-shadow: 1px 1px 0 $color--a;
 }
 
 h2,
 .beta {
-
+	text-shadow: 1px 1px 0 $color--a;
 }
 
 h3,
@@ -54,11 +54,11 @@ p {
 }
 
 a {
-
+	@include link-colors($color--link,$color--link-hover);
 }
 
 p a {
-
+	
 }
 
 /* MiSC elements

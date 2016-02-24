@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<!-- inline style -->
 	<style><?php include 'css/inline.css'; ?></style>
+	<link rel="stylesheet" href="<?php echo $styles[0]; ?>">
 	<!-- secondary style -->
 	<link rel="stylesheet" href="css/main.css">
 	<?php include 'php-files/tagline.php'; ?>
