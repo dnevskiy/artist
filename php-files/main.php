@@ -1,22 +1,18 @@
 <div class="contain">
 	<article>
 		<section class="gal">
-			<h2>ікони</h2>
-				
-					<li><a href=""><img src="#" alt=""></a></li>
-					<li><a href=""><img src="#" alt=""></a></li>
-					<li><a href=""><img src="#" alt=""></a></li>
-						
-			<a  href="" class="more">Усі ікони</a>
+			<h2>ікони</h2>				
+				<a href=""><img src="#" alt=""></a>
+				<a href=""><img src="#" alt=""></a>
+				<a href=""><img src="#" alt=""></a>				
+				<a href="#" class="more">Усі ікони</a>
 		</section>
 		<section class="gal">
 			<h2>Живопис</h2>
-				<ul>
-					<li><a href=""><img src="#" alt=""></a></li>
-					<li><a href=""><img src="#" alt=""></a></li>
-					<li><a href=""><img src="#" alt=""></a></li>
-				</ul>		
-			<a  href="#" class="more">Усі роботи</a>
+				<a href=""><img src="#" alt=""></a>
+				<a href=""><img src="#" alt=""></a>
+				<a href=""><img src="#" alt=""></a>
+				<a href="#" class="more">Усі роботи</a>
 		</section>
 		<section class="helen">
 			<h2>Наукові статті</h2>
