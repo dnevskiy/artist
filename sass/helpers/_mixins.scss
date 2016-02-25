@@ -1,5 +1,6 @@
 @import "compass/css3/opacity";
 @import "compass/css3/transition";
+@import "compass/css3/border-radius";
 
 /**
  * Media Queries
@@ -223,7 +224,9 @@
  *
  * Usage:
  *
- *      a +link-colors(#00c, #0cc, #c0c, #ccc, #cc0)
+ *      a {
+ *        @include link-colors($color--link,$color--link-hover);
+ *      }
  *
  */
 
@@ -257,4 +260,42 @@
   -ms-filter: $filter-type+unquote('(#{$filter-amount})');
   -o-filter: $filter-type+unquote('(#{$filter-amount})');
   filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+/**
+ * Button types
+ * -----------------------------------------------------------------------------
+ *
+ * Usage:
+ *
+ *      .button {
+ *        @include button(normal,true);
+ *      }
+ *
+ */
+
+@mixin button($size: normal, $corner: false) {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid $color--main;
+  @if $size == small {
+    font-size: $font-size--small;
+    padding: 3px 6px;
+    @if $corner {
+      @include border-radius(2px);
+    }
+  }
+  @else if $size == large {
+    font-size: $font-size--large;
+    padding: 7px 14px;
+    @if $corner {
+      @include border-radius(3px);
+    }
+  }
+  @else {
+    padding: 3px 10px; 
+    @if $corner {
+      @include border-radius(3px);
+    }   
+  }
 }

@@ -9,6 +9,9 @@
 			</div>
 			<a class="all-link" href="#" class="more">До галереї ікон</a>
 		</section>
+		<div class="button">New button</div>
+		<img src="http://placehold.it/150x100.png/321c05/9a8566">
+		<img src="http://lorempixel.com/g/150/100/people">
 		<section class="tony">
 			<h2>Живопис</h2>	
 			<div class="gal">			
