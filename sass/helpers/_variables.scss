@@ -6,7 +6,7 @@
 /* Brand colors
  * -------------------- */
 
-$color--main:										#e99847;
+$color--main:										#321c05;
 
 /* Base colors
  * -------------------- */
@@ -18,13 +18,13 @@ $color--black:									#222;
  * -------------------- */
 
 $color--text:										#333;
-$color--link:										#e99847;
+$color--link:										#9a8566;
 $color--link-hover:							darken($color--link, 10%);
 
 /* Button colors
  * -------------------- */
 
-$color--button:									#e99847;
+$color--button:									#9a8566;
 $color--button-hover:						darken($color--button, 10%);
 
 /* Third party brand colors
@@ -33,12 +33,6 @@ $color--button-hover:						darken($color--button, 10%);
 $color--facebook:								#03539e;
 $color--twitter:								#35ccff;
 $color--linkedin:								#217bc1;
-
-/* Fourth party brand colors
- * -------------------- */
-
-$color--a: #a0a0a0;
-$color--b: #f5f5f2;
 
 /**
  * Font sizes and spacing/widths

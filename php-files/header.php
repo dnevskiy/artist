@@ -1,5 +1,4 @@
 <header>
-	<div class="border-top"></div>
 	<div class="contain">
 		<div class="logo">Олена Осадча</div>
 		<div class="soc">

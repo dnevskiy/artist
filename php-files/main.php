@@ -1,18 +1,22 @@
 <div class="contain">
 	<article>
-		<section class="gal">
-			<h2>ікони</h2>				
-				<a href=""><img src="#" alt=""></a>
-				<a href=""><img src="#" alt=""></a>
-				<a href=""><img src="#" alt=""></a>				
-				<a href="#" class="more">Усі ікони</a>
+		<section class="tony">
+			<h2>Ікони</h2>
+			<div class="gal">			
+				<a class="gal-item" href="#"><img src="userfiles/ikona-bogorodytsi-kazanska.jpg" alt="alt"></a>
+				<a class="gal-item" href="#"><img src="userfiles/ikona-bogorodytsi-kazanska.jpg" alt="alt"></a>
+				<a class="gal-item" href="#"><img src="userfiles/ikona-bogorodytsi-kazanska.jpg" alt="alt"></a>				
+			</div>
+			<a class="all-link" href="#" class="more">До галереї ікон</a>
 		</section>
-		<section class="gal">
-			<h2>Живопис</h2>
-				<a href=""><img src="#" alt=""></a>
-				<a href=""><img src="#" alt=""></a>
-				<a href=""><img src="#" alt=""></a>
-				<a href="#" class="more">Усі роботи</a>
+		<section class="tony">
+			<h2>Живопис</h2>	
+			<div class="gal">			
+				<a class="gal-item" href="#"><img src="userfiles/ikona-bogorodytsi-kazanska.jpg" alt="alt"></a>
+				<a class="gal-item" href="#"><img src="userfiles/ikona-bogorodytsi-kazanska.jpg" alt="alt"></a>
+				<a class="gal-item" href="#"><img src="userfiles/ikona-bogorodytsi-kazanska.jpg" alt="alt"></a>				
+			</div>
+			<a class="all-link" href="#" class="more">До галереї живопису</a>
 		</section>
 		<section class="helen">
 			<h2>Наукові статті</h2>
@@ -30,7 +34,7 @@
 						<h3>Створення chora – сакрального простору храму-ікони</h3>
 					</a>
 				</div>
-			<a  href="#" class="helen-more">Усі статті</a>
+			<a href="#" class="all-link">Усі статті</a>
 		</section>
 		<section class="helen">
 			<h2>Блог</h2>
@@ -48,7 +52,7 @@
 						<h3>Створення chora – сакрального простору храму-ікони</h3>
 					</a>
 				</div>
-			<a href="#" class="helen-more">Усі статті</a>
+			<a href="#" class="all-link">Усі статті</a>
 		</section>
 	</article>
 </div>

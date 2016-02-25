@@ -8,7 +8,7 @@
 			</ul>
 		</div>
 		<div class="copy">
-			<p>Made by <a href="#">Nevskiy</a></p>
+			<p>Made by <a href="nevskiy.com.ua">nevskiy.com.ua</a></p>
 		</div>
 	</div>
 </footer>

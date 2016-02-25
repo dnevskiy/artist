@@ -97,18 +97,30 @@
     
  }
 
- .contain {
+.contain {
     width: $width-site;
     margin: 0 auto;
- }
+    @include breakpoint(large) {
+        width: $width-site;
+    }
+    @include breakpoint(medium) {
+        width: $width-site;
+    }
+    @include breakpoint(small) {
+        width: 80%;
+    }
+    @include breakpoint(xsmall) {
+        width: 90%;
+    }
+}
 
 /*
 ----------------------
 */
-.helen {
+
+.a {
     margin: 25px 0;
-    text-align: center;
-    width: 440px;
+    text-align: center;    
     display: inline-block;
     h2 {
         text-align: center;
@@ -118,23 +130,45 @@
         margin: 0;
         @include transition-duration($transition-time--base);
     }
-    &-more {
-        margin-top: 12px;
-        display: inline-block;
-        color: $color--black;
-        text-decoration: none;
+}
+
+.tony {
+    width: 100%;
+    @extend .a;
+}
+
+.helen {
+    @extend .a;
+    @include breakpoint(large) {
+        width: ($medium - 40)/2;
     }
+    @include breakpoint(medium) {
+        width: ($small - 40)/2;
+    }
+    @include breakpoint(small) {
+        width: ($xsmall - 40)/2;
+    }
+    @include breakpoint(xsmall) {
+        width: ($small - 40)/2;
+    }
+}
+
+.all-link {
+    margin-top: 12px;
+    display: inline-block;
+    color: $color--black;
+    text-decoration: none;
 }
 
 .lib {
     position: relative;
     height: 400px;
     padding-top: 30px;
-    padding-left: 120px;
-    border-top: 1px dashed $color--a;
-    border-bottom: 1px dashed $color--a;
+    border-top: 1px dashed $color--link;
+    border-bottom: 1px dashed $color--link;
     &-item {
         height: 100px;
+        padding-left: 120px;
         display: block;
         margin-bottom: 20px;
         text-decoration: none;
@@ -154,3 +188,16 @@
         @include filter(grayscale, 100%);
     }
 }
+
+.gal {
+    padding: 30px 0;
+    border-top: 1px dashed $color--link;
+    border-bottom: 1px dashed $color--link;
+    &-item {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
