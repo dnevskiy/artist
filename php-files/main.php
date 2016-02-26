@@ -3,21 +3,18 @@
 		<section class="tony">
 			<h2>Ікони</h2>
 			<div class="gal">			
-				<a class="gal-item" href="#"><img src="userfiles/ikona-bogorodytsi-kazanska.jpg" alt="alt"></a>
-				<a class="gal-item" href="#"><img src="userfiles/ikona-bogorodytsi-kazanska.jpg" alt="alt"></a>
-				<a class="gal-item" href="#"><img src="userfiles/ikona-bogorodytsi-kazanska.jpg" alt="alt"></a>				
+				<a class="gal-item" href="#"><img src="http://lorempixel.com/150/100/people" alt="alt"></a>
+				<a class="gal-item" href="#"><img src="http://lorempixel.com/150/100/people" alt="alt"></a>
+				<a class="gal-item" href="#"><img src="http://lorempixel.com/150/100/people" alt="alt"></a>				
 			</div>
 			<a class="all-link" href="#" class="more">До галереї ікон</a>
 		</section>
-		<div class="button">New button</div>
-		<img src="http://placehold.it/150x100.png/321c05/9a8566">
-		<img src="http://lorempixel.com/g/150/100/people">
 		<section class="tony">
 			<h2>Живопис</h2>	
 			<div class="gal">			
-				<a class="gal-item" href="#"><img src="userfiles/ikona-bogorodytsi-kazanska.jpg" alt="alt"></a>
-				<a class="gal-item" href="#"><img src="userfiles/ikona-bogorodytsi-kazanska.jpg" alt="alt"></a>
-				<a class="gal-item" href="#"><img src="userfiles/ikona-bogorodytsi-kazanska.jpg" alt="alt"></a>				
+				<a class="gal-item" href="#"><img src="http://lorempixel.com/150/100/people" alt="alt"></a>
+				<a class="gal-item" href="#"><img src="http://lorempixel.com/150/100/people" alt="alt"></a>
+				<a class="gal-item" href="#"><img src="http://lorempixel.com/150/100/people" alt="alt"></a>				
 			</div>
 			<a class="all-link" href="#" class="more">До галереї живопису</a>
 		</section>
@@ -25,15 +22,15 @@
 			<h2>Наукові статті</h2>
 				<div class="lib">
 					<a class="lib-item" href="#">
-						<img src="userfiles/hatnja-ikona-u-viruvannjah-ta-obrjadah.jpg" alt="Технологічні особливості написання української народної (хатньої) ікони">
+						<img src="http://lorempixel.com/100/100/" alt="Технологічні особливості написання української народної (хатньої) ікони">
 						<h3>Створення chora – сакрального простору храму-ікони</h3>
 					</a>
 					<a class="lib-item" href="#">
-						<img src="userfiles/hatnja-ikona-u-viruvannjah-ta-obrjadah.jpg" alt="Технологічні особливості написання української народної (хатньої) ікони">
+						<img src="http://lorempixel.com/100/100/" alt="Технологічні особливості написання української народної (хатньої) ікони">
 						<h3>Створення chora – сакрального простору храму-ікони</h3>
 					</a>
 					<a class="lib-item" href="#">
-						<img src="userfiles/hatnja-ikona-u-viruvannjah-ta-obrjadah.jpg" alt="Технологічні особливості написання української народної (хатньої) ікони">
+						<img src="http://lorempixel.com/100/100/" alt="Технологічні особливості написання української народної (хатньої) ікони">
 						<h3>Створення chora – сакрального простору храму-ікони</h3>
 					</a>
 				</div>
@@ -43,15 +40,15 @@
 			<h2>Блог</h2>
 				<div class="lib">
 					<a class="lib-item" href="#">
-						<img src="userfiles/hatnja-ikona-u-viruvannjah-ta-obrjadah.jpg" alt="Технологічні особливості написання української народної (хатньої) ікони">
+						<img src="http://lorempixel.com/100/100/" alt="Технологічні особливості написання української народної (хатньої) ікони">
 						<h3>Створення chora – сакрального простору храму-ікони</h3>
 					</a>
 					<a class="lib-item" href="#">
-						<img src="userfiles/hatnja-ikona-u-viruvannjah-ta-obrjadah.jpg" alt="Технологічні особливості написання української народної (хатньої) ікони">
+						<img src="http://lorempixel.com/100/100/" alt="Технологічні особливості написання української народної (хатньої) ікони">
 						<h3>Створення chora – сакрального простору храму-ікони</h3>
 					</a>
 					<a class="lib-item" href="#">
-						<img src="userfiles/hatnja-ikona-u-viruvannjah-ta-obrjadah.jpg" alt="Технологічні особливості написання української народної (хатньої) ікони">
+						<img src="http://lorempixel.com/100/100/" alt="Технологічні особливості написання української народної (хатньої) ікони">
 						<h3>Створення chora – сакрального простору храму-ікони</h3>
 					</a>
 				</div>

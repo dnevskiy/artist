@@ -269,7 +269,8 @@
  * Usage:
  *
  *      .button {
- *        @include button(normal,true);
+ *        @include button(size,corner,color,color2);
+ *        @include button-color(color,outlined);
  *      }
  *
  */
@@ -277,7 +278,6 @@
 @mixin button($size: normal, $corner: false) {
   display: inline-block;
   cursor: pointer;
-  border: 1px solid $color--main;
   @if $size == small {
     font-size: $font-size--small;
     padding: 3px 6px;
@@ -297,5 +297,13 @@
     @if $corner {
       @include border-radius(3px);
     }   
+  }
+}
+@mixin button-color($color, $outline: true) {
+  @if $outline {
+    border: 1px solid $color;
+  }
+  @else {  
+    background: $color;
   }
 }

@@ -1,8 +1,11 @@
 /**
  * Buttons
  * -----------------------------------------------------------------------------
+ * @include button(size,corner-radius);
+ * @include button-color(color,outlined);
  */
 
 .button {
 	@include button(normal,true);
+	@include button-color($color--main,true);
 }
