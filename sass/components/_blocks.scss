@@ -100,52 +100,15 @@
  *
  */
 
- .stage {
-    
- }
-
-.contain {
-    width: $width-site;
-    margin: 0 auto;
-    @include breakpoint(large) {
-        width: $width-site;
-    }
-    @include breakpoint(medium) {
-        width: $width-site;
-    }
-    @include breakpoint(small) {
-        width: 80%;
-    }
-    @include breakpoint(xsmall) {
-        width: 90%;
-    }
-}
-
 /*
 ----------------------
 */
 
-.a {
-    margin: 25px 0;
-    text-align: center;    
-    display: inline-block;
-    h2 {
-        text-align: center;
-        font-size: 2.2rem;
-    }
-    h3 {
-        margin: 0;
-        @include transition-duration($transition-time--base);
-    }
-}
-
 .tony {
     width: 100%;
-    @extend .a;
 }
 
 .helen {
-    @extend .a;
     @include breakpoint(large) {
         width: ($medium - 40)/2;
     }
@@ -207,4 +170,3 @@
         }
     }
 }
-
