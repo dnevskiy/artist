@@ -14,7 +14,7 @@
 				<li><a href="#">Блог</a></li>
 				<li><a href="#">Концепція</a></li>
 				<li><a href="#">Про автора</a></li>
-			</ul>				
+			</ul>
 		</nav>
 	</div>
 </header>

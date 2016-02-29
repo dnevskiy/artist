@@ -11,3 +11,19 @@
         @include transition-duration($transition-time--base);
     }
 }
+
+.section {
+  padding: 40px 20px;
+  & + .section {
+    border-top: 1px solid rgba($color--main, 1);
+  }
+  // @include desktop {
+  //   padding: 40px 0;
+  //   &.is-medium {
+  //     padding: 120px 0;
+  //   }
+  //   &.is-large {
+  //     padding: 240px 0;
+  //   }
+  // }
+}

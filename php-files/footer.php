@@ -1,3 +1,4 @@
+<!-- d-footer -->
 <footer class="helen-footer">
 	<div class="contain">
 		<div class="soc">

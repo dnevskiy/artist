@@ -272,7 +272,8 @@
  *        @include button(size,corner,color,color2);
  *        @include button-color(color,outlined);
  *      }
- *
+ *  1. Small
+ *  2. Large
  */
 
 @mixin button($size: normal, $corner: false) {
@@ -305,5 +306,17 @@
   }
   @else {  
     background: $color;
+  }
+}
+
+@mixin background($bcg) {
+  @if $bcg == color {
+    background-color: $color--background;
+  }
+  @else if $bcg == img {
+    background-image: $img--background;
+  }
+  @else {
+
   }
 }

@@ -27,6 +27,23 @@ $color--link-hover:							darken($color--link, 10%);
 $color--button:									#9a8566;
 $color--button-hover:						darken($color--button, 10%);
 
+/* Border colors
+ * -------------------- */
+
+$color--border:									#321c05;
+
+/* Border colors
+ * -------------------- */
+
+$color--body-background:							$color--main;
+$img--body-background:								url(http://lorempixel.com/1000/1000/abstract);
+
+$color--header-background:							$color--main;
+$img--header-background:								url(http://lorempixel.com/1000/1000/abstract);
+
+$color--footer-background:							$color--main;
+$img--footer-background:								url(http://lorempixel.com/1000/1000/abstract);
+
 /* Third party brand colors
  * -------------------- */
 

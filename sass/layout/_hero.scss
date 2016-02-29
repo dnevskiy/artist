@@ -1,0 +1,27 @@
+/**
+ * Hero types
+ * -----------------------------------------------------------------------------
+ *      .hero {
+ *        @include hero(size,bcg,position);
+ *      }
+ *  1. Medium       color   left
+ *  2. Large        img     right
+ *  3. Fullheight
+ */
+
+@mixin hero($size: normal, $bcg: none, $position: left) {
+  @include background($bcg);
+  @if $position == left {
+    text-align: left;
+  }
+  @else if $position == right {
+    text-align: right;
+  }
+  @else {
+    text-align: center;
+  }
+}
+
+.hero {
+  @include hero(normal,none,center);
+}
