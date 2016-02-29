@@ -1,5 +1,5 @@
 <header>
-	<div class="contain">
+	<div class="contain is-fluid">
 		<div class="logo">Олена Осадча</div>
 		<div class="soc">
 			<ul>

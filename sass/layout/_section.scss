@@ -1,0 +1,13 @@
+.section-helen {
+	margin: 25px 0;
+    text-align: center;    
+    display: inline-block;
+    h2 {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    h3 {
+        margin: 0;
+        @include transition-duration($transition-time--base);
+    }
+}
