@@ -32,17 +32,15 @@ $color--button-hover:						darken($color--button, 10%);
 
 $color--border:									#321c05;
 
-/* Border colors
+/* Backgrounds
  * -------------------- */
+$header--background-img:				'../img/bg_pattern.jpg';
+$body--background-img:					'../img/bg_pattern.jpg';
+$footer--background-img:				'../img/footer-bg-solid.png';
 
-$color--body-background:							$color--main;
-$img--body-background:								url(../img/bg_pattern.jpg);
-
-$color--header-background:							$color--main;
-$img--header-background:							url(http://lorempixel.com/1000/1000/abstract);
-
-$color--footer-background:							$color--main;
-$img--footer-background:							url(http://lorempixel.com/1000/1000/abstract);
+$header--background-color:			#ccc;
+$body--background-color:				#fff;
+$footer--background-color:			#ccc;
 
 /* Third party brand colors
  * -------------------- */
@@ -59,8 +57,8 @@ $color--linkedin:								#217bc1;
 /* Font familys
  * -------------------- */
 
-$font-family--primary:           'Open Sans', sans-serif;
-$font-family--secondary:         'Oranienbaum', serif;
+$font-family--primary:          'Open Sans', sans-serif;
+$font-family--secondary:        'Oranienbaum', serif;
 
 /* Font sizes
  * -------------------- */
@@ -72,15 +70,15 @@ $font-size--large:							24px;
 /* Spacings and widths
  * -------------------- */
 
-$tablet: 											769px;
-$desktop: 										980px;
-$widescreen: 									1180px;
+$tablet: 												769px;
+$desktop: 											980px;
+$widescreen: 										1180px;
 
-$width-site:									960px;
-$large:												1420px;
-$medium:											980px;
-$small:												760px;
-$xsmall:											480px;
+$width-site:										960px;
+$large:													1420px;
+$medium:												980px;
+$small:													760px;
+$xsmall:												480px;
 $spacing--small:								.5em;
 $spacing--medium:								1em;
 $spacing--large:								1.5em;

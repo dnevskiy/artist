@@ -4,7 +4,7 @@
  */
 
 .helen-footer {
-	background-image: url("../img/footer-bg-solid.png");
+	@include background(img, $body--background-color, $footer--background-img);
 	padding: 30px 0;
 	color: $color--white;
 }

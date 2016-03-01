@@ -351,12 +351,12 @@
   }
 }
 
-@mixin background($bcg,$place) {
-  @if $bcg == color {
-    background-color: $('color--'$place'-background');
+@mixin background($type: color, $color: none, $bckg: none) {
+  @if $type == color {
+    background-color: $color;
   }
-  @else if $bcg == img {
-    background-image: $('img--'$place'-background');
+  @else if $type == img {
+    background-image: url($bckg);
   }
   @else {
 
