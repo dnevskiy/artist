@@ -36,13 +36,13 @@ $color--border:									#321c05;
  * -------------------- */
 
 $color--body-background:							$color--main;
-$img--body-background:								url(http://lorempixel.com/1000/1000/abstract);
+$img--body-background:								url(../img/bg_pattern.jpg);
 
 $color--header-background:							$color--main;
-$img--header-background:								url(http://lorempixel.com/1000/1000/abstract);
+$img--header-background:							url(http://lorempixel.com/1000/1000/abstract);
 
 $color--footer-background:							$color--main;
-$img--footer-background:								url(http://lorempixel.com/1000/1000/abstract);
+$img--footer-background:							url(http://lorempixel.com/1000/1000/abstract);
 
 /* Third party brand colors
  * -------------------- */
@@ -71,11 +71,16 @@ $font-size--large:							24px;
 
 /* Spacings and widths
  * -------------------- */
-$width-site:										960px;
-$large:													1420px;
-$medium:												980px;
-$small:													760px;
-$xsmall:												480px;
+
+$tablet: 											769px;
+$desktop: 										980px;
+$widescreen: 									1180px;
+
+$width-site:									960px;
+$large:												1420px;
+$medium:											980px;
+$small:												760px;
+$xsmall:											480px;
 $spacing--small:								.5em;
 $spacing--medium:								1em;
 $spacing--large:								1.5em;

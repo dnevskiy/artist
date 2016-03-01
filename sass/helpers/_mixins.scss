@@ -32,6 +32,48 @@
     }
 }
 
+@mixin from($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
+@mixin until($device) {
+  @media screen and (max-width: $device - 1px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $tablet - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin touch {
+  @media screen and (max-width: $desktop - 1px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin widescreen {
+  @media screen and (min-width: $widescreen) {
+    @content;
+  }
+}
+
 /**
  * Font size
  * -----------------------------------------------------------------------------
@@ -309,14 +351,73 @@
   }
 }
 
-@mixin background($bcg) {
+@mixin background($bcg,$place) {
   @if $bcg == color {
-    background-color: $color--background;
+    background-color: $('color--'$place'-background');
   }
   @else if $bcg == img {
-    background-image: $img--background;
+    background-image: $('img--'$place'-background');
   }
   @else {
 
+  }
+}
+
+/*
+* Animation
+* -------------
+*/
+
+@keyframes spin-around {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* 
+* findColorInvert
+* ---------------
+*/
+
+@function colorLuminance($color) {
+  $color-rgb: ('red': red($color),'green': green($color),'blue': blue($color));
+  @each $name, $value in $color-rgb {
+    $adjusted: 0;
+    $value: $value / 255;
+    @if $value < 0.03928 {
+      $value: $value / 12.92;
+    }
+    @else {
+      $value: ($value + .055) / 1.055;
+      $value: powerNumber($value, 2);
+    }
+    $color-rgb: map-merge($color-rgb, ($name: $value));
+  }
+  @return (map-get($color-rgb, 'red') * .2126) + (map-get($color-rgb, 'green') * .7152) + (map-get($color-rgb, 'blue') * .0722);
+}
+
+@function findColorInvert($color) {
+  @if (colorLuminance($color) > 0.8) {
+    @return rgba(black, 0.5);
+  }
+  @else {
+    @return white;
+  }
+}
+
+/*
+* OddToEven
+* ---------------
+*/
+
+@function closestEvenNumber($number) {
+  @if ($number % 2 == 0px) {
+    @return $number;
+  }
+  @else {
+    @return ($number + 1px);
   }
 }
