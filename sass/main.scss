@@ -6,32 +6,24 @@
 /* Helpers
  * -------------------- */
 
-@import 'helpers/reset';
-@import 'helpers/variables';
-@import 'helpers/mixins';
-@import 'helpers/media-query-output';
+@import 'utilities/utilities';
 
 /* Foundation
  * -------------------- */
 
 @import 'foundation/base';
-@import 'foundation/print';
-@import 'foundation/typography';
 
 /* Components
  * -------------------- */
 
-@import 'components/buttons';
-@import 'components/lists';
-@import 'components/blocks';
-@import 'components/forms';
+@import 'components/components';
 
 /* Layout
  * -------------------- */
 
-@import 'layout/header';
-@import 'layout/hero';
-@import 'layout/container';
-@import 'layout/section';
-@import 'layout/navigation';
-@import 'layout/footer';
+@import 'elements/elements';
+
+/* My
+ * -------------------- */
+
+@import 'my/my';

@@ -1,0 +1,108 @@
+/**
+ * Colors
+ * -----------------------------------------------------------------------------
+ */
+
+/* Brand colors
+ * -------------------- */
+
+$color--main:										#321c05;
+
+/* Base colors
+ * -------------------- */
+
+$color--white:									#fff;
+$color--black:									#222;
+
+$color--grey-darker: #222324;
+$color--grey-dark: #69707a;
+$color--grey: #aeb1b5;
+$color--grey-light: #d3d6db;
+$color--grey-lighter: #f5f7fa;
+
+/* Text colors
+ * -------------------- */
+
+$color--text:										#333;
+$color--link:										#9a8566;
+$color--link-hover:							darken($color--link, 10%);
+
+$text-strong:										$color--grey-darker;
+
+/* Button colors
+ * -------------------- */
+
+$color--button:									#9a8566;
+$color--button-hover:						darken($color--button, 10%);
+
+/* Border colors
+ * -------------------- */
+
+$color--border:									#321c05;
+
+/* Backgrounds
+ * -------------------- */
+
+$background:										#ccc;
+
+$header--background-img:				'../img/bg_pattern.jpg';
+$body--background-img:					'../img/bg_pattern.jpg';
+$footer--background-img:				'../img/footer-bg-solid.png';
+
+$header--background-color:			#ccc;
+$body--background-color:				#fff;
+$footer--background-color:			#ccc;
+
+/* Third party brand colors
+ * -------------------- */
+
+$color--facebook:								#03539e;
+$color--twitter:								#35ccff;
+$color--linkedin:								#217bc1;
+
+/**
+ * Font sizes and spacing/widths
+ * -----------------------------------------------------------------------------
+ */
+
+/* Font familys
+ * -------------------- */
+
+$font-family--primary:          'Open Sans', sans-serif;
+$font-family--secondary:        'Oranienbaum', serif;
+
+/* Font sizes
+ * -------------------- */
+
+$size-1: 												48px;
+$size-2: 												40px;
+$size-3: 												28px;
+$size-4: 												24px;
+$size-5: 												18px;
+$size-6: 												16px;
+$size-7: 												11px;
+
+$font-size--small:							$size-7;
+$font-size--base:								$size-6;
+$font-size--large:							$size-4;
+
+/* Spacings and widths
+ * -------------------- */
+
+$tablet: 												769px;
+$desktop: 											980px;
+$widescreen: 										1180px;
+
+$width-site:										960px;
+$large:													1420px;
+$medium:												980px;
+$small:													760px;
+$xsmall:												480px;
+$spacing--small:								.5em;
+$spacing--medium:								1em;
+$spacing--large:								1.5em;
+
+/* Transitions
+ * -------------------- */
+
+$transition-time--base:         .3s;

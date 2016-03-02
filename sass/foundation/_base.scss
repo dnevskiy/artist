@@ -1,26 +1,4 @@
-/**
- * Base site styling
- * -----------------------------------------------------------------------------
- */
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-html {
-    box-sizing: border-box;
-}
-
-body {
-		border-top: solid 10px $color--main;
-    @include font-size($font-size--base);
-    font-family: $font-family--primary;
-    @include background(img, $body--background-color, $body--background-img);
-}
-
-::selection {
-    background: $color--main;
-    color: $color--white;
-}
+@import "generic";
+@import "content";
+@import "helpers";
+@import "print";
