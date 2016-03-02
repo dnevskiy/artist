@@ -14,20 +14,25 @@ $color--main:										#321c05;
 $color--white:									#fff;
 $color--black:									#222;
 
-$color--grey-darker: #222324;
-$color--grey-dark: #69707a;
-$color--grey: #aeb1b5;
-$color--grey-light: #d3d6db;
-$color--grey-lighter: #f5f7fa;
+$color--grey-darker: 						#222324;
+$color--grey-dark: 							#69707a;
+$color--grey: 									#aeb1b5;
+$color--grey-light: 						#d3d6db;
+$color--grey-lighter:					 	#f5f7fa;
 
 /* Text colors
  * -------------------- */
 
-$color--text:										#333;
+$color--text:										#333333;
 $color--link:										#9a8566;
 $color--link-hover:							darken($color--link, 10%);
 
+$colors:												(base: ($color--main, findColorInvert($color--main)));
+
 $text-strong:										$color--grey-darker;
+
+$text-invert:										findColorInvert($color--text);
+$link-invert:										findColorInvert($color--link);
 
 /* Button colors
  * -------------------- */
@@ -39,6 +44,7 @@ $color--button-hover:						darken($color--button, 10%);
  * -------------------- */
 
 $color--border:									#321c05;
+$border-hover:									darken($color--border, 10%);
 
 /* Backgrounds
  * -------------------- */
@@ -106,3 +112,20 @@ $spacing--large:								1.5em;
  * -------------------- */
 
 $transition-time--base:         .3s;
+
+$radius:												2px;
+
+/* Controls
+ * -------------------- */
+
+$control: $text-strong;
+$control-background: $text-invert;
+$control-border: $color--border;
+
+$control-hover: $color--link-hover;
+$control-hover-border: $border-hover;
+
+$control-active: $color--link;
+$control-active-background: $color--link;
+$control-active-background-invert: $link-invert;
+$control-active-border: $color--link;

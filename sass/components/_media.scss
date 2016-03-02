@@ -2,7 +2,7 @@
   background: $background;
   border-radius: 290486px;
   display: inline-block;
-  font-size: $size-medium;
+  font-size: $font-size--base;
   height: 32px;
   line-height: 24px;
   min-width: 32px;
@@ -39,7 +39,7 @@
     margin-bottom: 10px;
   }
   .media {
-    border-top: 1px solid rgba($border, 0.5);
+    border-top: 1px solid rgba($color--border, 0.5);
     display: flex;
     padding-top: 10px;
     .textarea {
@@ -61,7 +61,7 @@
     }
   }
   & + .media {
-    border-top: 1px solid rgba($border, 0.5);
+    border-top: 1px solid rgba($color--border, 0.5);
     margin-top: 10px;
     padding-top: 10px;
   }
