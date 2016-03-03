@@ -518,3 +518,11 @@
   vertical-align: top;
   width: $dimensions;
 }
+
+@mixin center($size) {
+  left: 50%;
+  margin-left: -($size / 2);
+  margin-top: -($size / 2);
+  position: absolute;
+  top: 50%;
+}
