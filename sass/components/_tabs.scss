@@ -11,8 +11,8 @@
     width: 20px;
   }
   a {
-    border-bottom: 1px solid $border;
-    color: $text;
+    border-bottom: 1px solid $color--border;
+    color: $color--text;
     display: block;
     margin-bottom: -1px;
     padding: 5px 0;
@@ -30,13 +30,13 @@
     }
     &.is-active {
       a {
-        border-bottom-color: $link;
-        color: $link;
+        border-bottom-color: $color--link;
+        color: $color--link;
       }
     }
   }
   ul {
-    border-bottom: 1px solid $border;
+    border-bottom: 1px solid $color--border;
     display: flex;
   }
   &.is-centered {
@@ -65,7 +65,7 @@
       padding: 5px 15px;
       &:hover {
         background: $background;
-        border-bottom-color: $border;
+        border-bottom-color: $color--border;
       }
     }
     li {
@@ -75,7 +75,7 @@
       &.is-active {
         a {
           background: white;
-          border-color: $border;
+          border-color: $color--border;
           border-bottom-color: transparent;
         }
       }
@@ -91,13 +91,13 @@
   }
   &.is-toggle {
     a {
-      border: 1px solid $border;
+      border: 1px solid $color--border;
       margin-bottom: 0;
       padding: 5px 10px;
       position: relative;
       &:hover {
         background: $background;
-        border-color: $border-hover;
+        border-color: $color--border-hover;
         z-index: 2;
       }
     }

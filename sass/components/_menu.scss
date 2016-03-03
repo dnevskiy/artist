@@ -11,7 +11,7 @@
 
 .menu-heading {
   background: $background;
-  border-bottom: 1px solid $border;
+  border-bottom: 1px solid $color--border;
   border-radius: 4px 4px 0 0;
   color: $text-strong;
   font-size: $size-medium;
@@ -21,9 +21,9 @@
 
 .menu-list {
   a {
-    color: $text;
+    color: $color--text;
     &:hover {
-      color: $link;
+      color: $color--link;
     }
   }
 }
@@ -34,15 +34,15 @@
   padding: 5px 10px 0;
   justify-content: center;
   &:not(:last-child) {
-    border-bottom: 1px solid $border;
+    border-bottom: 1px solid $color--border;
   }
   a {
-    border-bottom: 1px solid $border;
+    border-bottom: 1px solid $color--border;
     margin-bottom: -1px;
     padding: 5px;
     &.is-active {
-      border-bottom-color: $link-active-border;
-      color: $link-active;
+      border-bottom-color: $color--link-active-border;
+      color: $color--link-active;
     }
   }
 }
@@ -53,7 +53,7 @@
   line-height: 16px;
   padding: 10px;
   &:not(:last-child) {
-    border-bottom: 1px solid $border;
+    border-bottom: 1px solid $color--border;
   }
   .checkbox {
     border: 1px solid transparent;
@@ -66,7 +66,7 @@
       top: 9px;
     }
     &:hover {
-      border-color: $link;
+      border-color: $color--link;
     }
   }
 }
@@ -80,7 +80,7 @@ a.menu-block:hover {
   display: block;
   padding: 9px 10px 9px 30px;
   &:not(:last-child) {
-    border-bottom: 1px solid $border;
+    border-bottom: 1px solid $color--border;
   }
   input {
     left: 8px;
@@ -89,7 +89,7 @@ a.menu-block:hover {
 }
 
 .menu {
-  border: 1px solid $border;
+  border: 1px solid $color--border;
   border-radius: 5px;
   &:not(:last-child) {
     margin-bottom: 20px;

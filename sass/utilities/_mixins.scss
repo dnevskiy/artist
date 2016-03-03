@@ -387,7 +387,26 @@
     background: $color;
   }
 }
+@mixin button-small {
+  border-radius: 2px;
+  font-size: 11px;
+  height: 24px;
+  line-height: 16px;
+  padding: 3px 6px;
+}
 
+@mixin button-medium {
+  font-size: 18px;
+  height: 40px;
+  padding: 7px 14px;
+}
+
+@mixin button-large {
+  font-size: 22px;
+  height: 48px;
+  padding: 11px 20px;
+}
+/*-----------------------------*/
 @mixin background($type: color, $color: none, $bckg: none) {
   @if $type == color {
     background-color: $color;
@@ -475,4 +494,27 @@
       @content;
     }
   }
+}
+
+@mixin arrow($color) {
+  border: 1px solid $color;
+  border-right: 0;
+  border-top: 0;
+  content: " ";
+  display: block;
+  height: 7px;
+  pointer-events: none;
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 7px;
+}
+
+@mixin fa($size, $dimensions) {
+  display: inline-block;
+  font-size: $size;
+  height: $dimensions;
+  line-height: $dimensions;
+  text-align: center;
+  vertical-align: top;
+  width: $dimensions;
 }

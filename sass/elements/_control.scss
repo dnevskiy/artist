@@ -142,7 +142,7 @@
   input{
     border-radius: 8px;
     &:after{
-      background: $link-invert;
+      background: $color--link-invert;
       border: 0;
       border-radius: 2px;
       left: 4px;
@@ -165,13 +165,13 @@
     &::ms-expand{
       display: none;}}
   &:after{
-    @include arrow($link);
+    @include arrow($color--link);
     margin-top: -6px;
     right: 16px;
     top: 50%;}
   &:hover{
     &:after{
-      border-color: $link-hover;}}}
+      border-color: $color--link-hover;}}}
 .label{
   color: $text-strong;
   display: block;

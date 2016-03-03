@@ -3,36 +3,57 @@
  * -----------------------------------------------------------------------------
  */
 
+/* Base colors
+ * -------------------- */
+
+$white:										#fff;
+$black:										#222;
+
+$grey-darker: 						#222324;
+$grey-dark: 							#69707a;
+$grey: 										#aeb1b5;
+$grey-light: 							#d3d6db;
+$grey-lighter:					 	#f5f7fa;
+
+$blue:													#42afe3;
+$green:													#97cd76;
+$orange:												#f68b39;
+$purple:												#847bb9;
+$red:														#ed6c63;
+$turquoise:											#1fc8db;
+$yellow:												#fce473;
+
+$primary: 											$turquoise;
+$primary-invert: 								findColorInvert($primary);
+
 /* Brand colors
  * -------------------- */
 
 $color--main:										#321c05;
-
-/* Base colors
- * -------------------- */
-
-$color--white:									#fff;
-$color--black:									#222;
-
-$color--grey-darker: 						#222324;
-$color--grey-dark: 							#69707a;
-$color--grey: 									#aeb1b5;
-$color--grey-light: 						#d3d6db;
-$color--grey-lighter:					 	#f5f7fa;
-
+$color--main-invert:						findColorInvert($color--main);
 /* Text colors
  * -------------------- */
 
-$color--text:										#333333;
+$color--text:										$grey-dark;
+
+// Links
+
+$color--link-visited:						$purple;
+$color--link-hover-background: 	$grey-lighter;
+$color--link-hover-border: 			$grey-darker;
+
+$color--link-active: 						$grey-darker;
+$color--link-active-border: 		$grey-darker;
 $color--link:										#9a8566;
 $color--link-hover:							darken($color--link, 10%);
 
-$colors:												(base: ($color--main, findColorInvert($color--main)));
+$colors:												(primary: ($primary, $primary-invert));
 
-$text-strong:										$color--grey-darker;
+$text-strong:										$grey-darker;
+$text-light: 										$grey;
 
 $text-invert:										findColorInvert($color--text);
-$link-invert:										findColorInvert($color--link);
+$color--link-invert:						findColorInvert($color--link);
 
 /* Button colors
  * -------------------- */
@@ -43,21 +64,22 @@ $color--button-hover:						darken($color--button, 10%);
 /* Border colors
  * -------------------- */
 
-$color--border:									#321c05;
-$border-hover:									darken($color--border, 10%);
+$color--border:									$color--main;
+$color--border-hover:									darken($color--border, 10%);
+
 
 /* Backgrounds
  * -------------------- */
 
-$background:										#ccc;
+$background:										$grey;
 
 $header--background-img:				'../img/bg_pattern.jpg';
 $body--background-img:					'../img/bg_pattern.jpg';
 $footer--background-img:				'../img/footer-bg-solid.png';
 
-$header--background-color:			#ccc;
-$body--background-color:				#fff;
-$footer--background-color:			#ccc;
+$header--background-color:			$grey;
+$body--background-color:				$white;
+$footer--background-color:			$grey;
 
 /* Third party brand colors
  * -------------------- */
@@ -67,12 +89,16 @@ $color--twitter:								#35ccff;
 $color--linkedin:								#217bc1;
 
 /**
- * Font sizes and spacing/widths
+ * Typography. Font sizes and spacing/widths
  * -----------------------------------------------------------------------------
  */
 
 /* Font familys
  * -------------------- */
+
+$family-sans-serif: 						"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-monospace: 							"Source Code Pro", "Monaco", "Inconsolata", monospace;
+$family-serif: 									'Georgia', 'Times New Roman', Times, serif;
 
 $font-family--primary:          'Open Sans', sans-serif;
 $font-family--secondary:        'Oranienbaum', serif;
@@ -88,17 +114,26 @@ $size-5: 												18px;
 $size-6: 												16px;
 $size-7: 												11px;
 
+$size-small: 										$size-7;
+$size-normal: 									$size-6;
+$size-medium:									 	$size-5;
+$size-large: 										$size-3;
+$size-huge: 										$size-1;
+
 $font-size--small:							$size-7;
 $font-size--base:								$size-6;
 $font-size--large:							$size-4;
 
-/* Spacings and widths
+$weight-title-normal: 					300;
+$weight-title-bold: 						500;
+
+/* Breakpoints, Spacings and widths
  * -------------------- */
 
 $tablet: 												769px;
 $desktop: 											980px;
 $widescreen: 										1180px;
-
+/* Alternate -------------------------- */
 $width-site:										960px;
 $large:													1420px;
 $medium:												980px;
@@ -108,12 +143,21 @@ $spacing--small:								.5em;
 $spacing--medium:								1em;
 $spacing--large:								1.5em;
 
+// Dimensions
+
+$column-gap: 20px;
+$header-height: 50px;
+
 /* Transitions
  * -------------------- */
 
 $transition-time--base:         .3s;
 
-$radius:												2px;
+// Miscellaneous
+
+$easing: ease-out;
+$radius: 3px;
+$speed: 86ms;
 
 /* Controls
  * -------------------- */
@@ -123,9 +167,17 @@ $control-background: $text-invert;
 $control-border: $color--border;
 
 $control-hover: $color--link-hover;
-$control-hover-border: $border-hover;
+$control-hover-border: $color--border-hover;
 
 $control-active: $color--link;
 $control-active-background: $color--link;
-$control-active-background-invert: $link-invert;
+$control-active-background-invert: $color--link-invert;
 $control-active-border: $color--link;
+
+// Code
+
+$code: $red;
+$code-background: $background;
+
+$pre: $color--text;
+$pre-background: $background;
