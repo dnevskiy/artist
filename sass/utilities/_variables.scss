@@ -6,14 +6,14 @@
 /* Base colors
  * -------------------- */
 
-$white:										#fff;
-$black:										#222;
+$white:													#fff;
+$black:													#222;
 
-$grey-darker: 						#222324;
-$grey-dark: 							#69707a;
-$grey: 										#aeb1b5;
-$grey-light: 							#d3d6db;
-$grey-lighter:					 	#f5f7fa;
+$grey-darker:										#222324;
+$grey-dark:											#69707a;
+$grey:													#aeb1b5;
+$grey-light:										#d3d6db;
+$grey-lighter:									#f5f7fa;
 
 $blue:													#42afe3;
 $green:													#97cd76;
@@ -23,14 +23,15 @@ $red:														#ed6c63;
 $turquoise:											#1fc8db;
 $yellow:												#fce473;
 
-$primary: 											$turquoise;
-$primary-invert: 								findColorInvert($primary);
+$primary:												$turquoise;
+$primary-invert:								findColorInvert($primary);
 
 /* Brand colors
  * -------------------- */
 
 $color--main:										#321c05;
 $color--main-invert:						findColorInvert($color--main);
+
 /* Text colors
  * -------------------- */
 
@@ -38,19 +39,19 @@ $color--text:										$grey-dark;
 
 // Links
 
-$color--link-visited:						$purple;
-$color--link-hover-background: 	$grey-lighter;
-$color--link-hover-border: 			$grey-darker;
-
-$color--link-active: 						$grey-darker;
-$color--link-active-border: 		$grey-darker;
 $color--link:										#9a8566;
 $color--link-hover:							darken($color--link, 10%);
+$color--link-hover-border:			$grey-darker;
+$color--link-hover-background:	$grey-lighter;
+$color--link-visited:						$purple;
+
+$color--link-active:						$grey-darker;
+$color--link-active-border:			$grey-darker;
 
 $colors:												(primary: ($primary, $primary-invert));
 
 $text-strong:										$grey-darker;
-$text-light: 										$grey;
+$text-light:										$grey;
 
 $text-invert:										findColorInvert($color--text);
 $color--link-invert:						findColorInvert($color--link);
@@ -65,7 +66,7 @@ $color--button-hover:						darken($color--button, 10%);
  * -------------------- */
 
 $color--border:									$color--main;
-$color--border-hover:									darken($color--border, 10%);
+$color--border-hover:						darken($color--border, 10%);
 
 
 /* Backgrounds
@@ -96,9 +97,9 @@ $color--linkedin:								#217bc1;
 /* Font familys
  * -------------------- */
 
-$family-sans-serif: 						"Helvetica Neue", "Helvetica", "Arial", sans-serif;
-$family-monospace: 							"Source Code Pro", "Monaco", "Inconsolata", monospace;
-$family-serif: 									'Georgia', 'Times New Roman', Times, serif;
+$family-sans-serif:							"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-monospace:							"Source Code Pro", "Monaco", "Inconsolata", monospace;
+$family-serif:									'Georgia', 'Times New Roman', Times, serif;
 
 $font-family--primary:          'Open Sans', sans-serif;
 $font-family--secondary:        'Oranienbaum', serif;
@@ -106,78 +107,74 @@ $font-family--secondary:        'Oranienbaum', serif;
 /* Font sizes
  * -------------------- */
 
-$size-1: 												48px;
-$size-2: 												40px;
-$size-3: 												28px;
-$size-4: 												24px;
-$size-5: 												18px;
-$size-6: 												16px;
-$size-7: 												11px;
+$size-1:												48px;
+$size-2:												40px;
+$size-3:												28px;
+$size-4:												24px;
+$size-5:												18px;
+$size-6:												16px;
+$size-7:												11px;
+/* Alternate -------------------------- */
+$size-huge:											$size-1;
+$size-large:										$size-3;
+$size-medium:										$size-5;
+$size-normal:										$size-6;
+$size-small:										$size-7;
 
-$size-small: 										$size-7;
-$size-normal: 									$size-6;
-$size-medium:									 	$size-5;
-$size-large: 										$size-3;
-$size-huge: 										$size-1;
-
-$font-size--small:							$size-7;
-$font-size--base:								$size-6;
-$font-size--large:							$size-4;
-
-$weight-title-normal: 					300;
-$weight-title-bold: 						500;
+$weight-title-normal:						300;
+$weight-title-bold:							700;
 
 /* Breakpoints, Spacings and widths
  * -------------------- */
 
-$tablet: 												769px;
-$desktop: 											980px;
-$widescreen: 										1180px;
+$widescreen:										1180px;
+$desktop:												980px;
+$tablet:												769px;
 /* Alternate -------------------------- */
-$width-site:										960px;
 $large:													1420px;
-$medium:												980px;
-$small:													760px;
+$medium:												1180px;
+$small:													769px;
 $xsmall:												480px;
+
 $spacing--small:								.5em;
 $spacing--medium:								1em;
 $spacing--large:								1.5em;
 
 // Dimensions
 
-$column-gap: 20px;
-$header-height: 50px;
+$column-gap:										20px;
+$header-height:									50px;
 
 /* Transitions
  * -------------------- */
 
-$transition-time--base:         .3s;
+$transition-time--base:					.3s;
 
 // Miscellaneous
 
-$easing: ease-out;
-$radius: 3px;
-$speed: 86ms;
+$easing:												ease-out;
+$radius:												3px;
+$speed:													86ms;
 
 /* Controls
  * -------------------- */
 
-$control: $text-strong;
-$control-background: $text-invert;
-$control-border: $color--border;
+$control:																$text-strong;
+$control-background:										$text-invert;
+$control-border:												$color--border;
 
-$control-hover: $color--link-hover;
-$control-hover-border: $color--border-hover;
+$control-hover:													$color--link-hover;
+$control-hover-border:									$color--border-hover;
 
-$control-active: $color--link;
-$control-active-background: $color--link;
-$control-active-background-invert: $color--link-invert;
-$control-active-border: $color--link;
+$control-active:												$color--link;
+$control-active-background:							$color--link;
+$control-active-background-invert:			$color--link-invert;
+$control-active-border:									$color--link;
 
 // Code
 
-$code: $red;
-$code-background: $background;
+$code:																	$red;
+$code-background:												$background;
 
-$pre: $color--text;
-$pre-background: $background;
+$pre:																		$color--text;
+$pre-background:												$background;

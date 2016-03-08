@@ -359,14 +359,14 @@
   display: inline-block;
   cursor: pointer;
   @if $size == small {
-    font-size: $font-size--small;
+    font-size: $size-small;
     padding: 3px 6px;
     @if $corner {
       @include border-radius(2px);
     }
   }
   @else if $size == large {
-    font-size: $font-size--large;
+    font-size: $size-large;
     padding: 7px 14px;
     @if $corner {
       @include border-radius(3px);

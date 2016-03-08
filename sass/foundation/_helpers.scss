@@ -1,4 +1,4 @@
-// Display
+// Display ----------------------------------------------------
 
 .is-block {
   display: block;
@@ -12,7 +12,7 @@
   display: flex;
 }
 
-// Float
+// Float ----------------------------------------------------
 
 .is-clearfix {
   @include clearfix;
@@ -26,19 +26,19 @@
   float: right;
 }
 
-// Overlay
+// Overlay ----------------------------------------------------
 
 .is-overlay {
   @include overlay;
 }
 
-// Size
+// Size ----------------------------------------------------
 
 .is-fullwidth {
   width: 100%;
 }
 
-// Text
+// Text ----------------------------------------------------
 
 .is-text-centered {
   text-align: center;
@@ -52,7 +52,7 @@
   text-align: right;
 }
 
-// Visibility
+// Visibility ----------------------------------------------------
 
 .is-hidden-mobile {
   @include mobile {
@@ -78,7 +78,7 @@
   }
 }
 
-// Other
+// Other ----------------------------------------------------
 
 .is-disabled {
   pointer-events: none;
